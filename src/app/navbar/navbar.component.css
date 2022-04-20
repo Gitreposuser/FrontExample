@@ -1,0 +1,8 @@
+.navbar-container{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 96%;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px #5c5e5e;
+}
