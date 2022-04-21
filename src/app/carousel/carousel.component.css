@@ -2,14 +2,13 @@
     position: relative;
     margin: auto;
     text-align: center;
-    width: 96%;
+    width: 100%;
     border-radius: 16px;
-    box-shadow: 0 8px 16px #5c5e5e;
 }
 
 .carousel-container img {
     display: none;
-    border-radius: 16px;
+    border-radius: 16px 16px 0 0;
     background-color: grey;
 }
 

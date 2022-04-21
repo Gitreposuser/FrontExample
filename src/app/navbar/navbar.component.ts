@@ -12,4 +12,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(): void{
+    console.log("on click ");
+  }
+
+  onClickAbout(): void{
+    console.log("on click about");
+  }
 }

@@ -1,4 +1,15 @@
-<br>
 <div class="navbar-container">
-    <p>navbar works!</p>
+    <app-navbutton (btnClick)="onClick()"
+    text="Home" [isDisabled]="false"></app-navbutton>
+    <app-navbutton (btnClick)="onClick()"
+    text="Some link" [isDisabled]="false"></app-navbutton>
+    <app-navbutton (btnClick)="onClick()"
+    text="Some link" [isDisabled]="false"></app-navbutton>
+    <app-navbutton (btnClick)="onClick()"
+    text="Some link" [isDisabled]="false"></app-navbutton>
+    <app-navbutton (btnClick)="onClick()"
+    text="Some link" [isDisabled]="false"></app-navbutton>
+    <app-navbutton (btnClick)="onClickAbout()"
+    text="about" [isDisabled]="false"></app-navbutton>
+    <app-search></app-search>
 </div>

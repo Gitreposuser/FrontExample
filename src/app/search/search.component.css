@@ -1,0 +1,14 @@
+.navbar-search{
+    
+    background: rgb(243, 243, 253);
+    margin: 4px;
+    border: none;
+    padding: 4px;
+    height: 20px;
+    font-size: 18px;
+    max-width: 120px;
+}
+
+.navbar-search:hover{
+    background-color: rgb(117, 178, 202);
+}
