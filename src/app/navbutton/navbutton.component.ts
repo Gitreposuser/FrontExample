@@ -16,7 +16,7 @@ export class NavbuttonComponent implements OnInit {
   get name(): string{
     return this.buttonText;
   }
-  @Input() color: string = '0068B4';
+
   @Input() type: string = 'button';
   @Output() btnClick = new EventEmitter();
   @Input() isDisabled = false;
@@ -28,6 +28,6 @@ export class NavbuttonComponent implements OnInit {
   }
 
   onClick(){
-    console.log("on click navbutton");
+    this.btnClick.emit();
   }
 }

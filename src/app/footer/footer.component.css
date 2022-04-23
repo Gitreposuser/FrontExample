@@ -1,0 +1,26 @@
+.content-container{
+    display: flex;
+    margin-top: 50px;
+    border-radius: 16px;
+    box-shadow: 0 30px 16px #5c5e5e;
+}
+
+.column-container{
+    float: left;
+    width: 33%;
+    padding: 16px;
+    text-align: center;
+}
+
+.footer-links{
+    font-size: 24px;
+    font-style: italic;
+    opacity: 0.4;
+}
+
+.footer-links:hover{
+    background-color: rgb(117, 178, 202);
+    color: white;
+    border-radius: 8px;
+    opacity: 1;
+}

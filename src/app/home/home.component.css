@@ -1,0 +1,28 @@
+.content-container{
+    display: block;
+    margin-top: 50px;
+    padding-left: 16px;
+    border-radius: 16px;
+    box-shadow: 0 30px 16px #5c5e5e;
+}
+
+.content-container p{
+    margin: 0px;
+    padding-bottom: 8px;
+    font-size: 1.5rem;
+    text-indent: 24px;
+}
+
+@font-face {
+    font-family: 'MsMadi-Regular';
+    src: url('../fonts/msmadi/MsMadi-Regular.ttf');
+}
+
+p::first-letter{
+    font-family: MsMadi-Regular;
+    font-weight: 900;
+    font-size: 150%;
+    color: rgb(148, 87, 156);
+    text-shadow: 1px 4px 8px rgb(117, 178, 202);
+    text-transform: capitalize;
+}

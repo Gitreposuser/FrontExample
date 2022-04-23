@@ -1,1 +1,14 @@
-<p>login works!</p>
+<div class="login-form">
+    <div class="form-group">
+        <label for="userName">Username</label>
+        <input type="text" name="userName" [(ngModel)]="userName">
+    </div>
+    <div class="form-group">
+        <label for="passWord">Password</label>        
+        <input type="text" name="userName" [(ngModel)]="passWord">
+    </div>
+    <div>
+        <div class="login-button-error">{{ errorMsg }}</div>
+        <button class="login-button" (click)="onLoginClick()">Login</button>
+    </div>
+</div>

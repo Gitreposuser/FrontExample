@@ -1,0 +1,32 @@
+.content-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-left: 16px;
+    border-radius: 16px;
+    box-shadow: 0 30px 16px #5c5e5e;
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: 'MsMadi-Regular';
+    src: url('../fonts/msmadi/MsMadi-Regular.ttf');
+}
+
+p::first-letter{
+    font-family: 'MsMadi-Regular';
+    font-weight: 900;
+    font-size: 150%;
+    color: rgb(148, 87, 156);
+    text-shadow: 1px 4px 8px rgb(117, 178, 202);
+    text-transform: capitalize;
+}
+
+.author{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'MsMadi-Regular';
+    color: rgb(148, 87, 156);
+    font-size: 64px;
+    font-weight: 600;
+}
