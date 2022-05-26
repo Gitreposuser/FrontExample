@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,9 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  isLogged = false;
+  @Output() isLogged = true;
+  @Output() newLoginEvent = new EventEmitter<boolean>();
+
   userName = '';
   passWord = '';
   errorMsg = '';
@@ -42,5 +44,6 @@ export class LoginComponent implements OnInit {
         }
       }
     }
+    this.newLoginEvent.emit(this.isLogged);
   }
 }

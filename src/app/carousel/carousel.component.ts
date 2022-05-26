@@ -10,27 +10,39 @@ interface carouselImage{
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css']
 })
+
 export class CarouselComponent implements OnInit {
 
   @Input() images: carouselImage[] = [];
-  @Input() indicators = true;
-  @Input() controls = true;
-  @Input() autoSlide = false;
-  @Input() slideInterval = 3000;
+  @Input() indicators: boolean = true;
+  @Input() controls: boolean = true;
+  @Input() autoSlide: boolean = true;
+  @Input() slideInterval: number = 3000;
 
-  selectedIndex = 0;
+  timerId: any;
+
+  selectedIndex: number = 0;
 
   ngOnInit(): void {
+    this.startAutoSlide();
+  }
+
+  startAutoSlide(): void{
     if(this.autoSlide){
-      this.autoSlideImages();
+      this.timerId = setInterval(() => {
+        this.onNextClick();
+      }, this.slideInterval);
     }
   }
 
-  autoSlideImages(): void{
-    setInterval(() => {
-      this.onNextClick();
-    }, this.slideInterval);
+  onImgEnter(): void{
+    clearInterval(this.timerId);
   }
+
+  onImgLeave(): void{
+    this.startAutoSlide();
+  }
+
 
   selectImage(index:number): void{
     this.selectedIndex = index;
@@ -44,6 +56,7 @@ export class CarouselComponent implements OnInit {
       this.selectedIndex--;
     }
   }
+
   onNextClick(): void{
     if(this.selectedIndex === this.images.length - 1){
       this.selectedIndex = 0;

@@ -20,17 +20,22 @@ export class NavbarComponent implements OnInit {
 
   onHomeClick(): void{
     this.router.navigate(['home']);
-    console.log("route to home ");
+  }
+
+  onMangaClick(): void{
+    this.router.navigate(['manga']);
+  }
+
+  onDisable(): void{
+    console.log("on disabled");
   }
 
   onSomeLinkClick(): void{
-    this.router.navigate(['link']);
-    console.log("route to home ");
+    this.router.navigate(['pagenotfound']);
   }
 
   onClickAbout(): void{
     this.router.navigate(['about']);
-    console.log("on click about");
   }
 
   logout(){

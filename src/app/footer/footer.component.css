@@ -1,6 +1,7 @@
 .content-container{
     display: flex;
     margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 16px;
     box-shadow: 0 30px 16px #5c5e5e;
 }
@@ -16,6 +17,7 @@
     font-size: 24px;
     font-style: italic;
     opacity: 0.4;
+    text-decoration: underline;
 }
 
 .footer-links:hover{
@@ -23,4 +25,5 @@
     color: white;
     border-radius: 8px;
     opacity: 1;
+    cursor: pointer;
 }
