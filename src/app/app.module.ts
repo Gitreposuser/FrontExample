@@ -17,6 +17,10 @@ import { LoginComponent } from './pages/login/login.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MangaComponent } from './pages/manga/manga.component';
+import { MangaheaderComponent} from './mangacomponents/mangaheader/mangaheader.component';
+import { MangafooterComponent } from './mangacomponents/mangafooter/mangafooter.component';
+import { MangahomeComponent } from './mangacomponents/mangahome/mangahome.component';
+import { MangaelementComponent } from './mangacomponents/mangaelement/mangaelement.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { MangaComponent } from './pages/manga/manga.component';
     AboutComponent,
     FooterComponent,
     PagenotfoundComponent,
-    MangaComponent
+    MangaComponent,
+    MangaheaderComponent,
+    MangafooterComponent,
+    MangahomeComponent,
+    MangaelementComponent
   ],
   imports: [
     BrowserModule,

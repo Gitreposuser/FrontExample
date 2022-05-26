@@ -1,0 +1,22 @@
+.header-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.header-block{
+    display: block;
+    min-width: 33vw;
+    background-color: rgb(233, 217, 247);
+}
+
+h1{
+    font-family: 'Times New Roman';
+    font-size: 32px;
+    font-style: italic;
+    color: rgb(83, 161, 206);
+}
+
+.img{
+    object-fit: fill;
+}

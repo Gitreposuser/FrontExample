@@ -1,0 +1,18 @@
+.content-container{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: rgb(134, 115, 90);
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    columns: rgb(134, 115, 90);
+}
