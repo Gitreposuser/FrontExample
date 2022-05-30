@@ -1,5 +1,5 @@
-.content-container{
+.home-container{
     display: flex;
-    justify-content: flex-start;
-    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

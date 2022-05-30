@@ -43,7 +43,6 @@ export class CarouselComponent implements OnInit {
     this.startAutoSlide();
   }
 
-
   selectImage(index:number): void{
     this.selectedIndex = index;
   }

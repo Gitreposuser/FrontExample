@@ -11,5 +11,4 @@ export class MangahomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

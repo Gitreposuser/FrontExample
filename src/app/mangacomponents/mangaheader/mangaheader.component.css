@@ -7,16 +7,19 @@
 .header-block{
     display: block;
     min-width: 33vw;
-    background-color: rgb(233, 217, 247);
+    background-color: rgb(221, 200, 240);
 }
 
-h1{
+.header-font{
     font-family: 'Times New Roman';
     font-size: 32px;
     font-style: italic;
-    color: rgb(83, 161, 206);
+    color: rgb(128, 83, 158);
+    text-shadow: rgb(80, 123, 131) 3px 0 10px;
 }
 
-.img{
-    object-fit: fill;
+.otherinfo-font{
+    font-family: Cambria, Cochin, Georgia;
+    font-size: 22px;
+    color: rgb(240, 251, 255);
 }

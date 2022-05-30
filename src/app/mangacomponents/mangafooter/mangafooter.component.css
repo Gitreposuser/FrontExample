@@ -1,18 +1,12 @@
-.content-container{
+.footer-container{
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
+    background-color: rgb(236, 227, 214);
 }
 
-h2{
+.footer-font{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    color: rgb(134, 115, 90);
-}
-
-p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
     font-style: italic;
-    font-size: 20px;
-    columns: rgb(134, 115, 90);
+    color: rgb(134, 115, 90);
 }
