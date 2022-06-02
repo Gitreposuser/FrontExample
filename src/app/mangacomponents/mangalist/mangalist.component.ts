@@ -1,78 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { MangaelementService } from './mangaelement.service';
 import { IManga } from '../mangaelement/manga';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-mangalist',
   templateUrl: './mangalist.component.html',
   styleUrls: ['./mangalist.component.css']
 })
-export class MangalistComponent implements OnInit {
+export class MangalistComponent implements OnInit, OnDestroy {
+  sub!: Subscription;
+  mangas: IManga[] = [];
+  errorMessage: string = "";
 
-  constructor() { }
+  constructor(private managaService: MangaelementService){}
 
   ngOnInit(): void {
+    this.sub = this.managaService.getMangas().subscribe({
+      next: mangas => this.mangas = mangas,
+      error: err => this.errorMessage = err
+    });
   }
 
-  mangalist: IManga[] = [
-    {
-      imageUrl: "abc1",
-      title: "111",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "asd",
-      title: "222",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "dsgf",
-      title: "333",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "abfgc1",
-      title: "444",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "fgh",
-      title: "555",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "hjk",
-      title: "666",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "jkl",
-      title: "777",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "uio",
-      title: "888",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "wrer",
-      title: "999",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-    {
-      imageUrl: "cvb",
-      title: "111",
-      genre: "fighting",
-      name: "sldkfh"
-    },
-  ];
+  ngOnDestroy(): void{
+    this.sub.unsubscribe();
+  }
 }

@@ -10,7 +10,7 @@ export class MangaelementComponent implements IManga{
   @Input() imageUrl: string = "";
   @Input() title: string = "";
   @Input() genre: string = "";
-  @Input() name: string = "";
+  @Input() author: string = "";
 
   constructor() { }
 }
